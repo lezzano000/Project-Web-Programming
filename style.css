@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+
+/* COLOR PALLET
+    https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc
+*/
+
+body {
+    background-color: #003049;
+    margin: 0;
+    padding: 0;
+    color: #FDF0D5;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Start of Content */
+#home {
+    color: #FDF0D5;
+    text-align: center;
+    font-size: 4vw;
+    padding: 100px;
+}
+
+/* START OF PRODUCT */
+#product,.product {
+    color: #FDF0D5;
+    text-align: center;
+    font-size: 25px;
+    padding: 100px;
+    padding-bottom: 200px;
+}
+
+div.gallery {
+    border: 0px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 5px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* END OF PRODUCT */
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #C1121F;
+    border: none;
+    color: #FDF0D5;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* End Of Content */
+
+/* START OF HEADER */
+
+/* Page content */
+.content {
+    padding: 0px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: -85px;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 12em;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #669BBC;
+    margin-top: 85px;
+    padding: 0px 20px;
+    z-index: 4;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 10px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    background-color: #FDF0D5;
+    color: black;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}
+
+/* END OF HEADER */
+
+/* START OF SLIDESHOW HEADER */
+
+.headSlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.head-slideshow-container {
+    max-width: 1500px;
+    max-height: 500px;
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Caption text */
+.headText {
+    color: #f2f2f2;
+    padding: 12px 12px;
+    position: absolute;
+    bottom: 2vw;
+    width: 100%;
+    text-align: center;
+    font-size: 5vw;
+}
+
+/* END OF SLIDESHOW HEADER */
+
+/* START OF PROMO SLIDESHOW */
+
+#promo {
+    color: #FDF0D5;
+    text-align: center;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 60px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 6px 16px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* END OF PROMO SLIDESHOW */
+
+/* START OF ABOUT */
+#about {
+    color: #FDF0D5;
+    text-align: center;
+    font-size: 25px;
+    padding: 50px;
+}
+
+.bgImage {
+    background-color: #C1121F;
+}
+/* END OF ABOUT */
+
+/* START OF CONTACT US */
+#contact {
+    color: #FDF0D5;
+    text-align: center;
+    font-size: 25px;
+    padding: 40px;
+}
+
+/* END OF CONTACT US */
+
+/* START OF FOOTER */
+.footer{
+    background-color: #003049;
+    font-size: 20px;
+    padding: 0 20px 0;
+}
+
+
+
+/* END OF FOOTER */
