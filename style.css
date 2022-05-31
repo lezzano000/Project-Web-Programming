@@ -23,7 +23,8 @@ body {
 }
 
 /* START OF PRODUCT */
-#product,.product {
+#product,
+.product {
     color: #FDF0D5;
     text-align: center;
     font-size: 25px;
@@ -133,7 +134,7 @@ div.desc {
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky+.content {
     padding-top: 12em;
 }
 
@@ -249,7 +250,8 @@ img {
 }
 
 /* Next & previous buttons */
-.prev,.next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -271,7 +273,8 @@ img {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,.next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -307,7 +310,8 @@ img {
     transition: background-color 0.6s ease;
 }
 
-.active,.dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
 
@@ -341,6 +345,7 @@ img {
 .bgImage {
     background-color: #C1121F;
 }
+
 /* END OF ABOUT */
 
 /* START OF OPERATION HOURS */
@@ -360,10 +365,11 @@ img {
 .textOp {
     font-size: 16px;
 }
- .sub-headOp {
-     font-size: 1em;
-     font-weight: bold;
- }
+
+.sub-headOp {
+    font-size: 1em;
+    font-weight: bold;
+}
 
 /* END OF OPERATION HOURS */
 
@@ -378,7 +384,7 @@ img {
 /* END OF CONTACT US */
 
 /* START OF FOOTER */
-.footer{
+.footer {
     background-color: #003049;
     font-size: 20px;
     padding: 0 20px 0;
