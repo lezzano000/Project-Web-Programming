@@ -335,12 +335,37 @@ img {
     text-align: center;
     font-size: 25px;
     padding: 50px;
+    padding-top: 100px;
 }
 
 .bgImage {
     background-color: #C1121F;
 }
 /* END OF ABOUT */
+
+/* START OF OPERATION HOURS */
+
+.opHours {
+    color: #FDF0D5;
+    text-align: center;
+    font-size: 25px;
+    padding: 40px;
+}
+
+.headOp {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.textOp {
+    font-size: 16px;
+}
+ .sub-headOp {
+     font-size: 1em;
+     font-weight: bold;
+ }
+
+/* END OF OPERATION HOURS */
 
 /* START OF CONTACT US */
 #contact {
