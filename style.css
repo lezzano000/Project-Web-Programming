@@ -186,6 +186,7 @@ body {
         float: none;
         display: block;
         text-align: left;
+        line-height: 0px;
     }
 
     .header-right {
@@ -380,7 +381,7 @@ img {
 #contact {
     color: #FDF0D5;
     text-align: center;
-    font-size: 25px;
+    font-size: 3.5vh;
     padding: 25px;
 }
 
