@@ -6,10 +6,6 @@ html {
     scroll-behavior: smooth
 }
 
-/* COLOR PALLET
-    https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc
-*/
-
 body {
     background-color: #003049;
     margin: 0;
@@ -18,12 +14,13 @@ body {
     font-family: "Roboto", Arial, sans-serif;
 }
 
+
 /* Start of Content */
 #home {
     color: #FDF0D5;
     text-align: center;
-    font-size: 4vw;
-    padding: 100px;
+    font-size: 25px;
+    padding: 50px 0 50px;
 }
 
 /* START OF PRODUCT */
@@ -32,8 +29,7 @@ body {
     color: #FDF0D5;
     text-align: center;
     font-size: 25px;
-    padding: 100px;
-    padding-bottom: 200px;
+    padding: 50px 0 50px;
 }
 
 .gallery {
@@ -123,68 +119,6 @@ body {
 
 /* End Of Content */
 
-/* START OF HEADER */
-
-/* Page content */
-.content {
-    padding: 0px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: -85px;
-    width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky+.content {
-    padding-top: 12em;
-}
-
-/* Style the header with a grey background and some padding */
-.header {
-    overflow: hidden;
-    background-color: #669BBC;
-    margin-top: 85px;
-    padding: 0px 20px;
-    z-index: 4;
-}
-
-/* Style the header links */
-.header a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 40px;
-    border-radius: 10px;
-}
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.header a.icon {
-    display: none;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-    background-color: #FDF0D5;
-    color: black;
-}
-
-/* Float the link section to the right */
-.header-right {
-    float: right;
-}
-
-/* END OF HEADER */
 
 /* START OF SLIDESHOW HEADER */
 
@@ -192,15 +126,12 @@ body {
     display: none;
 }
 
-img {
-    vertical-align: middle;
-}
-
 .headSlides img {
     vertical-align: middle;
-    width: 100%;
-    height: 585px;
+    width: 100%; 
+    height: 100%; 
     opacity: 50%;
+    padding-top: 60px;
 }
 
 /* Slideshow container */
@@ -218,12 +149,12 @@ img {
 /* Caption text */
 .headText {
     color: #f2f2f2;
-    padding: 12px 12px;
+    padding: 12px 12px 60px;
     position: absolute;
-    bottom: 2vw;
+    bottom: 0vw;
     width: 100%;
     text-align: center;
-    font-size: 5vw;
+    font-size: 8vw;
 }
 
 /* END OF SLIDESHOW HEADER */
@@ -235,7 +166,7 @@ img {
     text-align: center;
     font-size: 25px;
     margin-top: 50px;
-    padding-top: 60px;
+    padding: 0px 0 0px;
 }
 
 /* Slideshow container */
@@ -339,7 +270,7 @@ img {
     color: #FDF0D5;
     text-align: center;
     font-size: 25px;
-    padding: 50px;
+    padding: 50px 10px 50px;
 }
 
 .bgImage {
@@ -362,21 +293,19 @@ img {
     font-weight: bold;
 }
 
-.textOp {
-    font-size: 20px;
-}
-
 .sub-headOp {
     font-size: 1em;
     font-weight: bold;
 }
 
-/* Create three equal columns that floats next to each other */
+.textOp {
+    font-size: 20px;
+}
+
 #column {
     float: left;
-    width: 33.33%;
-    padding: 10px;
-    margin-bottom: 50px;
+    width: 100%;
+    padding: 25px;
     text-align: center;
 }
 
@@ -403,8 +332,55 @@ img {
 .footer {
     text-align: center;
     background-color: #003049;
-    font-size: 20px;
+    font-size: 17px;
     padding: 0 20px 0;
 }
 
 /* END OF FOOTER */
+
+/* HEADER */
+.header {
+    overflow: hidden;
+    background-color: #669BBC;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.header #myLinks {
+    display: none;
+}
+
+.header a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 10px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a.icon {
+    background: #669BBC;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* END OF HEADER */
+
+

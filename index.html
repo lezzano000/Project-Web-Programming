@@ -6,9 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 751px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 750px)" href="stylephone.css">
     <title>Tifancan Store</title>
     <link rel="icon" type="image/png" href="Image\android-chrome-192x192.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
 </head>
 
@@ -18,15 +20,15 @@
     <div class="head-slideshow-container" id="default">
 
         <div class="headSlides">
-            <img src="Image\Clothes Shopping 1.jpg" style="width:100%; height: 585px; opacity: 50%;">
+            <img src="Image\Clothes Shopping 1.jpg">
         </div>
 
         <div class="headSlides">
-            <img src="Image\Clothes Shopping 2.jpg" style="width:100%; height: 585px; opacity: 50%;">
+            <img src="Image\Clothes Shopping 2.jpg">
         </div>
 
         <div class="headSlides">
-            <img src="Image\Clothes Shopping 3.jpg" style="width:100%; height: 585px; opacity: 50%;">
+            <img src="Image\Clothes Shopping 3.jpg">
         </div>
 
         <div class="headText">
@@ -37,14 +39,15 @@
 
     <!-- Navbar -->
     <div id="navbar" class="header">
-        <a href="#default" class="logo"><i class="fa-duotone fa-xl fa-shirt"></i> Tifancan </a>
-        <div class="header-right">
+        <a href="#default" class="logo"><i class="fa-duotone fa-xl fa-shirt"></i> Tifancan </a> 
+        <div class="header-right" id="myLinks">
             <a href="#home">Home</a>
             <a href="#product">Products</a>
             <a href="#promo">Promo</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
+        <a class="icon" onclick="burgerNav()"><i class="fa fa-xl fa-bars"></i></a>
     </div>
 
     <!-- Page -->
@@ -160,34 +163,25 @@
         </span>
         <br>
         <br>
-        <div class="sub-headOp">
-            <span style="float: left; padding-left: 200px;">
-                Store & Delivery
-            </span>
-            <span>
-                Customer Service
-            </span>
-            <span style="float: right; padding-right: 275px;">
-                Our Office
-            </span>
+    </div>
+    <div class="row">
+        <div class="textOp" id="column">
+            <h3>Store & Delivery</h3>
+            Monday to Sunday at 08.00 - 21.00
         </div>
-        <div class="textOp">
-            <span style="float: left; padding-left: 170px;">
-                Monday to Sunday at 08.00 - 21.00
-            </span>
-            <span style="padding-left: 20px;">
-                Monday to Sunday at 08.00 - 19.00
-            </span>
-            <span style="float: right; padding-right: 200px;">
-                Monday to Sunday at 08.00 - 18.00
-            </span>
+        <div class="textOp" id="column">
+            <h3>Customer Service</h3>
+            Monday to Sunday at 08.00 - 19.00
         </div>
-
+        <div class="textOp" id="column">
+            <h3>Our Office</h3>
+            Monday to Sunday at 08.00 - 18.00
+        </div>
     </div>
 
     <div id="contact" class="bgImage">
         <h2>Contact Us</h2>
-        <p style="text-align: left;">
+        <p class="textOp" style="text-align: left;">
             Tifancan Clothing Store <br>
             We deliver everyday from 8 AM to 21 PM. <br> <br>
             Telephone : +62 895-2480-4049 <br>
@@ -198,8 +192,7 @@
 
     <!-- Footer -->
     <div class="footer">
-        Made with <i class="fa-duotone fa-mug-hot"></i> and <i class="fa-duotone fa-sm fa-heart"></i></i>
-        <span style="float: right;">&copy2021 Tifancan Clothing Store</span>
+        Copyright &copy 2021 Tifancan Clothing Store
     </div>
     <script src="fontawesome 6.js"></script>
     <script src="scriptjs.js"></script>
