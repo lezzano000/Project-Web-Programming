@@ -8,9 +8,11 @@ function headCarousel() {
         x[i].style.display = "none";
     }
     headSlideIndex++;
-    if (headSlideIndex > x.length) { headSlideIndex = 1 }
+    if (headSlideIndex > x.length) {
+        headSlideIndex = 1
+    }
     x[headSlideIndex - 1].style.display = "block";
-    setTimeout(headCarousel, 3000); // Change image every 2 seconds
+    setTimeout(headCarousel, 3000); // Change image every 3 seconds
 }
 
 // When the user scrolls the page, execute myFunction
