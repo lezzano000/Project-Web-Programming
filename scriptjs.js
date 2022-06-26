@@ -4,7 +4,7 @@ headCarousel();
 function headCarousel() {
     var i;
     var x = document.getElementsByClassName("headSlides");
-    for (i = 0; i < xlength; i++) {
+    for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
     headSlideIndex++;
@@ -28,8 +28,7 @@ var sticky = navbar.offsetTop;
 function stickyNav() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
-    } 
-    else {
+    } else {
         navbar.classList.remove("sticky");
     }
 }
